@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TheMeal</string>
+
+    <string name="copyright">Copyright&#169; %1$d</string>
+    <string name="version_name">v%1$s</string>
+    <string name="my_name">Aldi Dwiki Prahasta</string>
+    <string name="my_email">aldidwiki@gmail.com</string>
+    <string name="ingredients">Ingredients :</string>
+    <string name="instructions">Instructions :</string>
+    <string name="connection_error">Oops, Connection Error</string>
+    <string name="btn_retry">RETRY</string>
+</resources>
