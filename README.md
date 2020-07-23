@@ -11,3 +11,8 @@ Aplikasi ini telah ditambahkan fitur connection error berupa fragment pada halam
 
 
 Catatan : Jika ada data yang kosong/tidak tampil itu dikarenakan data dari API nya memang kosong. Terimakasih.
+
+## Screenshots
+
+<kbd><img src="https://github.com/aldidwiki/TheMeal/blob/master/screenshots/2020_07_23_10.27.34.jpg"  width="200" height="400"></kbd>
+<kbd><img src="https://github.com/aldidwiki/TheMeal/blob/master/screenshots/2020_07_23_10.28.19.jpg"  width="200" height="400"></kbd>
