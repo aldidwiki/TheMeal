@@ -31,7 +31,7 @@ class DetailActivity : AppCompatActivity(), DetailView {
         collapsingToolbarLayout.title = toolbarTitle
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        presenter = DetailPresenter(this, this)
+        presenter = DetailPresenter(this)
 
         rvIngredient = findViewById(R.id.rv_ingredient)
         detailParent = findViewById(R.id.activity_detail)

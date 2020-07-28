@@ -1,8 +1,8 @@
 package com.aldidwikip.mysubmission.presenter
 
-import android.content.Context
 import android.util.Log
 import android.widget.Toast
+import com.aldidwikip.mysubmission.TheMeal
 import com.aldidwikip.mysubmission.model.DataDetailMealModel
 import com.aldidwikip.mysubmission.model.DetailMealModel
 import com.aldidwikip.mysubmission.service.ApiService
@@ -11,7 +11,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class DetailPresenter(private val context: Context, private val view: DetailView) {
+class DetailPresenter(private val view: DetailView) {
     private val apiService = ApiService.create()
     private val listIngredient: MutableList<String> = mutableListOf()
     private val listMeasure: MutableList<String> = mutableListOf()
@@ -21,7 +21,7 @@ class DetailPresenter(private val context: Context, private val view: DetailView
         detailMealCall.enqueue(object : Callback<DetailMealModel> {
             override fun onFailure(call: Call<DetailMealModel>, t: Throwable) {
                 Log.d(TAG, "onFailure: ${t.message}")
-                Toast.makeText(context, "Connection Error", Toast.LENGTH_LONG).show()
+                Toast.makeText(TheMeal.context, "Connection Error", Toast.LENGTH_LONG).show()
             }
 
             override fun onResponse(call: Call<DetailMealModel>, response: Response<DetailMealModel>) {
@@ -75,7 +75,6 @@ class DetailPresenter(private val context: Context, private val view: DetailView
         listMeasure.add(data[0].strMeasure19)
         listMeasure.add(data[0].strMeasure20)
     }
-
 
     companion object {
         private const val TAG = "DetailPresenter"
